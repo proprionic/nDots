@@ -1,0 +1,24 @@
+* {
+    font-family: FiraCode Nerd Font Mono;
+    color: #cdd6f4; /* Text */
+}
+
+#outer-box {
+    background-color: #1e1e2e; /* Base */
+}
+
+#input {
+    background-color: #313244; /* Mantle */
+    border: 2px solid #45475a; /* Surface1 */
+    padding: 8px;
+    color: #cdd6f4; /* Text */
+}
+
+#inner-box {
+    border: 2px solid #45475a; /* Surface1 */
+}
+
+#entry:selected {
+    background-color: #585b70; /* Surface2 */
+    color: #b4befe; /* Lavender */
+}

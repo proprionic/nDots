@@ -1,0 +1,83 @@
+{
+    "layer": "bot",
+    "height": 0,
+    "margin-bottom": 5,
+    "position": "top",
+    "margin-top": 20,
+    "margin-right": 100,
+    "margin-left": 100,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["custom/applauncher"],
+    "modules-right": ["custom/colorpicker", "custom/screenshot", "clock", "pulseaudio", "network", "custom/packages","tray"],
+
+    "custom/applauncher": {
+        "format": "󰁤",
+        "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 15",
+        "on-click-right": "bash /home/nic/.config/hypr/scripts/powermenu.sh",
+        "on-click-middle": "bash /home/nic/.config/hypr/scripts/nAssist.sh",
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": " {:%H:%M} ",
+        "tooltip": false
+    },
+
+    "network": {
+        "format-wifi": " {bandwidthDownBits}",
+        "format-ethernet": "󰈀 {bandwidthDownBits} ",
+        "format-disconnected": "󱚼",
+        "interval": 5,
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 600,
+        "format": "{icon} {volume}% ",
+        "format-icons": ["", "", ""],
+        "nospacing": 1,
+        "format-muted": " ",
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "urgent": "",
+            "active": "",
+            "default": ""
+        }
+    },
+
+    "custom/packages": {
+        "format": "pkgs: {}",
+        "pkgs": "pacman -Qq | wc -l",
+        "tooltip": false,
+        "exec": "pacman -Qq | wc -l",
+        "on-click-right": "alacritty --hold -e python /home/nic/.config/hypr/scripts/paru-update.py",
+        "on-click": "alacritty --hold -e python /home/nic/.config/hypr/scripts/pacman-update.py"
+    },
+
+    "custom/screenshot": {
+        "format": "",
+        "on-click": "sh /home/nic/.config/hypr/scripts/screenshot.sh",
+        "on-click-right": "sh /home/nic/.config/hypr/scripts/screenshot-cp.sh"
+    },
+
+    "custom/colorpicker": {
+        "format": " {}",
+        "on-click": "hyprpicker | wl-copy"
+        
+    }
+}
+

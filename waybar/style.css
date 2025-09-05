@@ -1,0 +1,182 @@
+/* *{
+    font-family: FiraCode Nerd Font Mono;
+    border-radius: 9px;
+    background: transparent;
+    font-weight: bold;
+
+}
+
+window#waybar {
+    background-image: linear-gradient(to right, #323647 100%);
+    border: 2px solid #2c1649;
+}
+
+
+
+
+
+#workspaces {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+
+}
+
+#workspaces button {
+    color: rgb(60, 60, 106);
+    background-color: rgb(60, 60, 106);
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #615fa3;
+    border: 2px solid #2c1649;
+
+    transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, box-shadow 0.7s ease;
+
+}
+
+#workspaces button.active {
+
+    color: #5b5b9c;
+    background-color: #5b5b9c;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #4e4d6d;
+}
+
+
+#window {
+    background-color: rgb(60, 60, 106);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    border: 2px solid #2c1649;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #5b5b9c;
+}
+#clock,
+#pulseaudio,
+#network,
+#tray,
+#custom-packages {
+    margin-left: 0.2cm;
+    margin-right: 0.2cm;
+    margin-top: 0.2cm;
+    margin-bottom: 0.2cm;
+    padding-right: 3px;
+    padding-left: 5px;
+    border: 2px solid #2c1649;
+    background-color: rgb(61, 61, 119);
+    color: #5b5b9c;
+}
+
+#clock {
+    background-color: #dd7878;
+    color: #eff1f5;
+}
+
+
+#custom-applauncher {
+    color: #313153;
+} */
+
+* {
+    font-family: FiraCode Nerd Font Mono;
+    border-radius: 8px;
+    background: transparent;
+    font-weight: 600;
+    color: #cdd6f4; /* Text */
+}
+
+window#waybar {
+    background-image: linear-gradient(to right, #313244 100%); /* Mantle */
+    border: 2px solid #45475a; /* Surface1 */
+    border-radius: 10px;
+}
+
+#workspaces {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 12px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#workspaces button {
+    color: #bac2de;
+    background-color: #45475a;
+    border-radius: 2px;
+    border: 2px solid #313244;
+    box-shadow: 0px 0px 0px #585b70;
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        border-radius 0.3s ease,
+        box-shadow 0.7s ease;
+}
+
+#workspaces button.active {
+    color: #cdd6f4;
+    background-color: #585b70;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #6c7086;
+    padding-right: 15px;
+    padding-left: 15px;
+    transition:
+        padding-right 0.1s ease,
+        padding-left 0.1s ease;
+}
+#window {
+    background-color: #45475a; /* Surface1 */
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 12px;
+    border: 2px solid #313244; /* Mantle */
+    padding-left: 18px;
+    padding-right: 18px;
+    color: #b4befe; /* Lavender */
+    border-radius: 8px;
+}
+
+#clock,
+#pulseaudio,
+#network,
+#tray,
+#custom-packages {
+    margin: 6px 8px;
+    padding: 0 10px;
+    border: 2px solid #313244; /* Mantle */
+    border-radius: 8px;
+}
+
+#clock {
+    background-color: #f2cdcd; /* Flamingo */
+    color: #1e1e2e; /* Base */
+}
+
+#pulseaudio {
+    background-color: #f5c2e7; /* Pink */
+    color: #1e1e2e; /* Base */
+}
+
+#network {
+    background-color: #a6e3a1; /* Green */
+    color: #1e1e2e; /* Base */
+}
+
+#tray {
+    background-color: #89b4fa; /* Blue */
+    color: #1e1e2e; /* Base */
+}
+
+#custom-packages {
+    background-color: #f9e2af; /* Yellow */
+    color: #1e1e2e; /* Base */
+}
+
+#custom-applauncher {
+    color: #cba6f7; /* Mauve */
+    background-color: #45475a; /* Surface1 */
+    border: 2px solid #313244; /* Mantle */
+    padding: 0 10px;
+    border-radius: 8px;
+    margin: 6px 8px;
+}
