@@ -2,7 +2,7 @@
 
 op=$( echo -e " Poweroff\n Reboot\n Suspend\n Lock\n Logout" | wofi -i --dmenu --height 135 --location=top -y 15 | awk '{print tolower($2)}' )
 
-case $op in 
+case $op in
         poweroff)
                 ;&
         reboot)
@@ -11,7 +11,7 @@ case $op in
                 systemctl $op
                 ;;
         lock)
-		hyprlock -c /home/nic/.config/hypr/lock.conf
+		hyprlock -c $HOME/.config/hypr/lock.conf
                 ;;
         logout)
                 hyprctl dispatch exit

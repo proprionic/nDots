@@ -2,7 +2,9 @@ import os
 import random
 import time
 
-wallpaper_dir = r'/home/nic/Wallpapers/'
+user = os.getlogin()
+
+wallpaper_dir = f'/home/{user}/Wallpapers/'
 
 wallpapers = os.listdir(wallpaper_dir)
 

@@ -2,4 +2,4 @@
 
 pkill -f wallpaper.py
 
-python /home/nic/.config/hypr/scripts/wallpaper.py &
+python $HOME/.config/hypr/scripts/wallpaper.py &
